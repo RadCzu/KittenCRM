@@ -1,0 +1,21 @@
+[
+  {
+    "name": "system_language",
+    "default_value": "pl",
+    "type": "select",
+    "label": "system_language",
+    "meta": ["pl", "en"]
+  },
+  {
+    "name": "sidebar_bg_color",
+    "default_value": "#74B18B",
+    "type": "color",
+    "label": "sidebar_bg_color"
+  },
+  {
+    "name": "sidebar_text_color",
+    "default_value": "#000000",
+    "type": "color",
+    "label": "sidebar_text_color"
+  }
+]

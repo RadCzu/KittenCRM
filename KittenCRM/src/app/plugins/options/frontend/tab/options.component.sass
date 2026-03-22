@@ -1,0 +1,87 @@
+.options-shell
+  padding: var(--fr-30) // Closest to 2rem
+  max-width: 1200px
+  margin: 0 auto
+  font-family: "Sniglet", system-ui
+  font-style: normal
+
+*
+  font-family: "Sniglet", system-ui
+  font-style: normal
+
+h2
+  font-weight: 200
+  font-size: var(--fr-50)
+
+.options-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: var(--fr-2) solid #eee
+  padding-bottom: var(--fr-15)
+  margin-bottom: var(--fr-30)
+
+.plugin-group
+  margin-bottom: var(--fr-50) // Closest to 3rem
+  
+  .group-title
+    text-transform: uppercase
+    font-weight: 200
+    font-size: var(--fr-25) // Approximately 0.75rem-0.85rem
+    letter-spacing: var(--fr-1)
+    padding-bottom: var(--fr-8)
+    margin-bottom: var(--fr-25)
+
+.settings-list
+  background: #fdfdfd
+  border: var(--fr-1) solid #f0f0f0
+  border-radius: var(--fr-8)
+  padding: var(--fr-10) 0 // Vertical padding for the whole group
+
+.setting-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: var(--fr-15) var(--fr-20) // Horizontal spacing inside the block
+  transition: background 0.2s
+
+  &:hover
+    background: #ffffff
+    // Subtle inner shadow or highlight on hover instead of a floating shadow
+    box-shadow: inset 0 0 var(--fr-10) rgba(0,0,0,0.02)
+
+.setting-info
+  .setting-label
+    display: block
+    font-weight: 200
+    color: #333
+  .setting-path
+    font-size: var(--fr-10) // Small code font
+    color: #aaa
+
+.color-picker-wrapper
+  display: flex
+  align-items: center
+  gap: var(--fr-10)
+
+  .input-text
+    font-family: monospace
+    padding: var(--fr-6)
+    border: var(--fr-1) solid #ddd
+    border-radius: var(--fr-4)
+    width: var(--fr-100)
+
+  .color-preview
+    width: var(--fr-25)
+    height: var(--fr-25)
+    border-radius: var(--fr-4)
+    border: var(--fr-1) solid #0000001a
+
+.btn
+  padding: var(--fr-8) var(--fr-15)
+  color: #ffffff
+  border: none
+  border-radius: var(--fr-4)
+  cursor: pointer
+  &:hover
+    filter: brightness(0.9)

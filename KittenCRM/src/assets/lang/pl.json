@@ -1,0 +1,17 @@
+{
+  "options": {
+    "sidebar_bg_color": {
+      "label": "Kolor tła panelu bocznego"
+    },
+    "sidebar_text_color": {
+      "label": "Kolor tekstu panelu bocznego"
+    },
+    "system_language": {
+      "label": "Język systemu",
+      "values": {
+        "pl": "Polski",
+        "en": "Angielski"
+      }
+    }
+  }
+}

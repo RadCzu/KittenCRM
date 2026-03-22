@@ -1,0 +1,12 @@
+<div class="main-sidebar" [style.background-color]="sidebarBgColor">
+  <div class="logo-area">
+    <img src="assets/KITTENS/NYAN.gif" alt="Nyan Cat" class="logo-gif">
+  </div>
+  @for (item of sidebar.getItems(); track item.title) {
+    <app-sidebar-item
+      [title]="item.title"
+      [icon]="item.icon"
+      [onClick]="item.onClick">
+    </app-sidebar-item>
+  }
+</div>

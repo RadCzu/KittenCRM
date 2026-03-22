@@ -1,0 +1,16 @@
+<div class="sidebar-item" (click)="onClick()">
+  <div class="content-container">
+    <div class="icon-container" *ngIf="icon">
+      <div 
+        class="item-icon"
+        [style.background-color]="themeTextColor"
+        [style.mask-image]="'url(' + icon + ')'"
+        [style.-webkit-mask-image]="'url(' + icon + ')'">
+      </div>
+    </div>
+    
+    <span class="item-title" [style.color]="themeTextColor">
+      {{ displayTitle }}
+    </span>
+  </div>
+</div>

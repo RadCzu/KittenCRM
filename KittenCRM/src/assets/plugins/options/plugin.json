@@ -1,0 +1,7 @@
+{
+  "name": "options",
+  "serviceFile": "options.plugin.service.ts",
+  "serviceClass": "OptionsPluginService",
+  "version": "1.0.0",
+  "author": "radekczuj@gmail.com"
+}

@@ -1,0 +1,17 @@
+{
+  "options": {
+    "sidebar_bg_color": {
+      "label": "Sidebar Background Color"
+    },
+    "sidebar_text_color": {
+      "label": "Sidebar Text Color"
+    },
+    "system_language": {
+      "label": "System Language",
+      "values": {
+        "pl": "Polish",
+        "en": "English"
+      }
+    }
+  }
+}

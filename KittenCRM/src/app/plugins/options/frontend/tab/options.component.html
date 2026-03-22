@@ -1,0 +1,74 @@
+<div class="options-shell">
+  <header class="options-header">
+    <div class="header-content">
+      <h2>{{ t('title', 'options') }}</h2>
+      <button 
+        class="btn btn-save" 
+        [style.background-color]="themeBgColor"
+        (click)="save()">
+        {{ t('save_button', 'options') }}
+      </button>
+    </div>
+  </header>
+
+  <main class="options-grid">
+    @for (group of groupedOptions | keyvalue; track group.key) {
+      <section class="plugin-group">
+        <h3 class="group-title" [style.color]="themeTextColor">
+          {{ group.key }}
+        </h3>
+        
+        <div class="settings-list">
+          @for (opt of group.value; track opt.fullPath) {
+            <div class="setting-item">
+              <div class="setting-info">
+                <label class="setting-label" [style.color]="themeTextColor">
+                  {{ t('options.' + opt.name + '.label', opt.namespace) }}
+                </label>
+                <code class="setting-path">{{ opt.fullPath }}</code>
+              </div>
+
+              <div class="setting-control">
+                @switch (opt.type) {
+                  
+                  @case ('color') {
+                    <div class="color-picker-wrapper">
+                      <input type="text" class="input-text"
+                            [value]="draftValues[opt.fullPath]" 
+                            (input)="onUpdate(opt.fullPath, $any($event.target).value)">
+                      <div class="color-preview" [style.background-color]="draftValues[opt.fullPath]"></div>
+                    </div>
+                  }
+
+                  @case ('select') {
+                    <select class="input-select"
+                            [ngModel]="draftValues[opt.fullPath]"
+                            (ngModelChange)="onUpdate(opt.fullPath, $event)">
+                      @for (val of opt.meta; track val) {
+                        <option [value]="val">
+                          {{ t('options.' + opt.name + '.values.' + val, opt.namespace) }}
+                        </option>
+                      }
+                    </select>
+                  }
+
+                  @case ('boolean') {
+                    <input type="checkbox" 
+                          [checked]="draftValues[opt.fullPath]" 
+                          (change)="onUpdate(opt.fullPath, $any($event.target).checked)">
+                  }
+
+                  @default {
+                    <input type="text" class="input-text" 
+                          [value]="draftValues[opt.fullPath]" 
+                          (input)="onUpdate(opt.fullPath, $any($event.target).value)">
+                  }
+                }
+              </div>
+            </div>
+          }
+        </div>
+      </section>
+    }
+  </main>
+</div>

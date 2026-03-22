@@ -1,0 +1,7 @@
+{
+  "name": "hello-world",
+  "serviceFile": "hello-world.plugin.service.ts",
+  "serviceClass": "HelloWorldPluginService",
+  "version": "1.0.0",
+  "author": "radekczuj@gmail.com"
+}
