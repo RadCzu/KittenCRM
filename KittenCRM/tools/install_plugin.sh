@@ -36,7 +36,7 @@ echo "Detected plugin name: $PLUGIN_NAME"
 # 4. Define target paths relative to script location (assuming tools/ and src/ are siblings)
 BASE_DIR=".."
 APP_PLUGINS_DIR="$BASE_DIR/src/app/plugins"
-ASSETS_PLUGINS_DIR="$BASE_DIR/src/assets"
+ASSETS_PLUGINS_DIR="$BASE_DIR/src/assets/plugins"
 
 # 5. Check if folders already exist
 if [ -d "$APP_PLUGINS_DIR/$PLUGIN_NAME" ]; then

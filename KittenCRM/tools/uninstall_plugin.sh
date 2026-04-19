@@ -12,7 +12,7 @@ fi
 # 2. Define target paths
 BASE_DIR=".."
 APP_PATH="$BASE_DIR/src/app/plugins/$PLUGIN_NAME"
-ASSETS_PATH="$BASE_DIR/src/assets/$PLUGIN_NAME"
+ASSETS_PATH="$BASE_DIR/src/assets/plugins/$PLUGIN_NAME"
 
 # Convert to absolute paths for the confirmation message (cleaner for the user to read)
 ABS_APP_PATH=$(readlink -f "$APP_PATH")
