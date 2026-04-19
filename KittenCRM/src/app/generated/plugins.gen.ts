@@ -2,15 +2,18 @@
 import { Injectable } from '@angular/core';
 import { HelloWorldPluginService } from '../plugins/hello-world/hello-world.plugin.service';
 import { OptionsPluginService } from '../plugins/options/options.plugin.service';
+import { SaleFormPluginService } from '../plugins/sale-form/sale-form.plugin.service';
 
 // Registry of all plugins with their names and service classes
 export const PLUGIN_REGISTRY = [
   { name: 'hello-world', service: HelloWorldPluginService },
-  { name: 'options', service: OptionsPluginService }
+  { name: 'options', service: OptionsPluginService },
+  { name: 'sale-form', service: SaleFormPluginService }
 ];
 
 // Optional: re-export all plugin services
 export {
   HelloWorldPluginService,
-  OptionsPluginService
+  OptionsPluginService,
+  SaleFormPluginService
 };

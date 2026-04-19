@@ -40,3 +40,18 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+# Ignore the generated file
+/src/app/generated/*
+!/src/app/generated/
+
+# Ignore all in plugins
+/src/app/plugins/*
+!/src/app/plugins/hello-world/
+!/src/app/plugins/options/
+
+# Ignore all in assets
+/src/assets/plugins/*
+!/src/assets/plugins/hello-world/
+!/src/assets/plugins/options/
