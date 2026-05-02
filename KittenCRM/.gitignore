@@ -55,3 +55,5 @@ Thumbs.db
 /src/assets/plugins/*
 !/src/assets/plugins/hello-world/
 !/src/assets/plugins/options/
+
+/pipeline

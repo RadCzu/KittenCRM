@@ -1,0 +1,11 @@
+{
+  "/api/sale-form": {
+    "target": "http://sale-form-backend-service:3000",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/sale-form": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
